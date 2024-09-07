@@ -20,7 +20,7 @@ cursor:url("cursor-16.ico"), auto;
   /* styles related to text */
   /* font family of text you can go to https://fonts.google.com/ to import a different font if you want */ 
   --font-family: 'IBM Plex Sans', sans-serif;
-  --text-color: #ff0088;
+  --text-color: #0051ff;
 
   /* styles related to buttons */
   --button-primary-default: #2;
@@ -67,7 +67,7 @@ h1 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 20px;
   text-align: center;
 }
@@ -216,7 +216,7 @@ a {
 	font-size: 35px;
 	font-family: Arial Black, Gadget, sans-serif;
 	background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
-	-webkit-animation: animatedBackground_a 5s linear infinite alternate;
+	animation: animatedBackground_a 5s linear infinite alternate;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: #0000;
 	background-clip: text;
@@ -226,12 +226,12 @@ a {
 	0% { background-position: 0 0 }
 	100% { background-position: -500px 0 }
 }
-}
+
 .animated_rainbow_2 {
 	font-size: 12px;
 	font-family: Arial Black, Gadget, sans-serif;
 	background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
-	-webkit-animation: animatedBackground_b 5s linear infinite alternate;
+	animation: animatedBackground_b 5s linear infinite alternate;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: #0000;
 	background-clip: text;
@@ -240,9 +240,30 @@ a {
 	0% { background-position: 0 0 }
 	100% { background-position: -500px 0 }
 }
-.hide {
-	font-size: 0.1px;
+.hide
+	font-size: 1px;
   body {
     opacity: 0;
     transition: opacity 5s;
+}
+BODY {
+  cursor: url("cursor-16.ico"), auto;
+}
+.user-list {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 80%;
+  width:80%;
+  overflow: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('bg.gif') no-repeat center center/cover; /*!!!!!!!!!CHANGE THIS FOR YOUR BACKGROUND!!!!!!!!*/
+  text-align: center;
 }
